@@ -21,25 +21,28 @@ export class LoginForm extends Component {
     render() {
         const {id, pass} = this.state;
         return (
-            <div className="container center all">
+            <div className="container center all vertical">
+                <h1>Do you have 75% attendance?</h1>
+                <p className="p">Check it here.</p>
                 <form onSubmit={this.submit} className="form">
                         <TextField 
                         type="text" 
                         required
                         name="id" 
                         variant="outlined"
-                        style={{margin: '30px 0'}}
+                        style={{margin: '30px 10px'}}
                         id="id" 
                         value={id}
                         onChange={this.onChange}
                         label="Enter your TEC ID"
                         placeholder="TU3F...."/>
                         <TextField 
-                        type="text" 
+                        type="password" 
                         required
                         name="pass" 
                         onChange={this.onChange}
                         variant="outlined"
+                        style={{margin: '0px 10px'}}
                         value={pass}
                         label="Enter your ERP Password"
                         id="pass" 

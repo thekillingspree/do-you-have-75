@@ -1,0 +1,51 @@
+{
+    "result": {
+        "result": [
+            {
+                "sub": "Applied Mathematics--PP\t",
+                "attendance": 100
+            },
+            {
+                "sub": "Analysis of Algorith-PP\t",
+                "attendance": 90.24
+            },
+            {
+                "sub": "Computer Organizatio-PP\t",
+                "attendance": 75
+            },
+            {
+                "sub": "Computer Graphics-PP\t",
+                "attendance": 82.86
+            },
+            {
+                "sub": "Operating System-PP\t",
+                "attendance": 81.82
+            },
+            {
+                "sub": "Analysis of Algorith-PR\t",
+                "attendance": 77.78
+            },
+            {
+                "sub": "Computer Graphics La-PR\t",
+                "attendance": 88.89
+            },
+            {
+                "sub": "Processor Architectu-PR\t",
+                "attendance": 87.5
+            },
+            {
+                "sub": "Operating System Lab-PR\t",
+                "attendance": 100
+            },
+            {
+                "sub": "Open Source Tech Lab-PR\t",
+                "attendance": 100
+            },
+            {
+                "sub": "Open Source Tech Lab-PP\t",
+                "attendance": 76.47
+            }
+        ],
+        "avg": 87.32363636363637
+    }
+}
