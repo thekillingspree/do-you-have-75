@@ -1,28 +1,26 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
+import LoginForm from './Components/LoginForm';
 
 class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
-    );
-  }
+
+	state = {
+		auth: false
+	}
+
+	submit = (id, pass) => {
+
+	}
+
+	render() {
+		const {auth} = this.state;
+		return (
+			<div className="fullscreen center all vertical">
+				<h1>Do you have 75% attendance?</h1>
+				{!auth && <LoginForm submit={this.submit} />}
+			</div>
+		)
+	}
 }
 
 export default App;
