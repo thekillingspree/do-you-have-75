@@ -8,7 +8,10 @@ export const api = (id, pass) => {
         axios.post(API_URL, {id, pass}).then((result) => {
             resolve(result.data.result);
         }).catch((err) => {
-            reject(err.response.data.error);
+            if (err.response && err.response.data)
+                reject(err.response.data.error);
+            else 
+                reject("Error");
         });
     })
 }

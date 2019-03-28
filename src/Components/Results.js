@@ -57,7 +57,7 @@ export class Results extends Component {
         let {avg} = this.props.results;
         const {h1} = ps[less];
         return (
-        <div className="center all vertical container"> 
+        <div className="center all vertical container" style={{paddingTop: 20}}> 
             <span><h1>{h1}</h1></span>
             <p className="p">Your overall attendance is {avg.toFixed(2)}%</p>
                 <div className="chart center all vertical">
