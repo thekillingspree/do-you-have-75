@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import {ResponsiveContainer, Radar, RadarChart, PolarGrid, PolarAngleAxis, PolarRadiusAxis, Tooltip} from 'recharts'
+import {Helmet} from 'react-helmet';
+import {ResponsiveContainer, Radar, RadarChart, PolarGrid, PolarAngleAxis, Tooltip} from 'recharts'
 const P  = 0;
 const J  = 1;
 const F  = 2;
@@ -22,7 +23,8 @@ export class Results extends Component {
     
     state = {
         less: F,
-        subs: []
+        subs: [],
+        color: '#c0392b'
     }
 
     chartify = subs => {
@@ -53,11 +55,15 @@ export class Results extends Component {
     }
 
     render() {
-        const {less, subs} = this.state;
+        const {less, subs, color} = this.state;
         let {avg} = this.props.results;
         const {h1} = ps[less];
         return (
-        <div className="center all vertical container" style={{paddingTop: 20}}> 
+        <div className="center all vertical container" style={{paddingTop: 20}}>
+            <Helmet>
+                <title>{h1}</title>
+                <meta name="theme-color" content={color}/>
+            </Helmet>
             <span><h1>{h1}</h1></span>
             <p className="p">Your overall attendance is {avg.toFixed(2)}%</p>
                 <div className="chart center all vertical">
