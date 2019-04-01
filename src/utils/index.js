@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 
-const API_URL = "https://doyouhave.herokuapp.com/attendance/scrap";
+const API_URL = "https://api-project-181592317544.appspot.com/attendance/scrap";
 
 export const api = (id, pass) => {
     return new Promise((resolve, reject) => {
