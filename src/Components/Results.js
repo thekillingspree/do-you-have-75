@@ -5,6 +5,7 @@ const P  = 0;
 const J  = 1;
 const F  = 2;
 
+//TODO: Need to complete this part
 const fails = {
     h1: "Uh oh! You have less attendance"
 }
