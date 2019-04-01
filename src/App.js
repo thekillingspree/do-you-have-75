@@ -69,7 +69,7 @@ class App extends Component {
 					onClose={this.handleErrorClose}>
 					<SnackbarContent 
 					style={{backgroundColor: red[700]}}
-					message={<span className="snackbar-message"><ErrorIcon />  {`\t${error}`}</span>}
+					message={<span className="snackbar-message"><ErrorIcon />  {`${error}\n(Sometimes the erp maybe down)`}</span>}
 					action={[
 						<IconButton onClick={this.handleErrorClose}><CloseIcon /></IconButton>
 					]}

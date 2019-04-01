@@ -86,6 +86,10 @@ label,
     align-items: center;
 }
 
+.snackbar-message svg {
+	margin-right: 10px;
+}
+
 .links {
 	display: flex;
 	flex-direction: column;
