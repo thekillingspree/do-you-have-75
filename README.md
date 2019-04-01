@@ -1,4 +1,6 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### Do you have 75?
+
+Visit website [here](https://doyouhave75.tk)
 
 ## Available Scripts
 
