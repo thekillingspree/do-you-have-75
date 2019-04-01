@@ -4,7 +4,7 @@ Visit website [here](https://doyouhave75.tk)
 
 ## Available Scripts
 
-In the project directory, you can run:
+Feel free to contribute. In the project directory, you can run:
 
 ### `npm start`
 
