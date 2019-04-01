@@ -66,7 +66,7 @@ export class Results extends Component {
             </Helmet>
             <span><h1>{h1}</h1></span>
             <p className="p">Your overall attendance is {avg.toFixed(2)}%</p>
-                <div className="chart center all vertical">
+                <div className="chart center vertical">
                 <ResponsiveContainer width="110%" height="100%">
                 <RadarChart 
                 margin={{ top: 20 }}

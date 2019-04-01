@@ -48,7 +48,7 @@ class App extends Component {
 	render() {
 		const {auth, loading, result, error} = this.state;
 		return (
-			<div className="center all vertical" style={{height: "100vh"}}>
+			<div className="center vertical" style={{height: "100vh"}}>
 				<Dialog
 					open={loading}
 					onClose={this.closeDialog}

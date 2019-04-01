@@ -56,15 +56,10 @@ label,
 	flex-direction: column;
 }
 
-.center.all {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-}
-
 .center {
 	display: flex;
 	align-items: center;
+	justify-content: center;
 }
 
 .vertical {
@@ -89,6 +84,37 @@ label,
 .snackbar-message {
     display: flex;
     align-items: center;
+}
+
+.links {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+
+}
+
+.links a {
+	text-decoration: none;
+	color: #fff;
+}
+
+.links a:nth-child(2) {
+	display: flex;
+	margin-top: 20px;
+	align-items: center;
+
+}
+
+.links img {
+	width: 32px;
+	height: 32px;
+	margin: 0 10px;
+	border-radius: 50%;
+	transition: all 0.5s ease;
+}
+
+.links img:hover {
+	background-color: #000;
 }
 
 @media only screen and (max-width: 500px) {

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import TextField from '@material-ui/core/TextField';
-
+import GithubIcon from '../img/github.svg';
 export class LoginForm extends Component {
 
     state = {
@@ -21,7 +21,7 @@ export class LoginForm extends Component {
     render() {
         const {id, pass} = this.state;
         return (
-            <div className="container center all vertical">
+            <div className="container center vertical">
                 <h1>Do you have 75% attendance?</h1>
                 <p className="p">Check it here.</p>
                 <form onSubmit={this.submit} className="form">
@@ -49,6 +49,10 @@ export class LoginForm extends Component {
                         placeholder="Your password is not stored."/>
                         <button className="button">GO</button>
                 </form>   
+                <div className="links center vertical">
+                    <a target="_blank" rel="noopener noreferrer" href="https://ajeshd17.tk">Created by Ajesh DS</a>
+                    <a target="_blank" rel="noopener noreferrer" href="https://github.com/thekillingspree/do-you-have-75">View Code on Github <img src={GithubIcon}  alt="Github"/></a>
+                </div>
             </div>
         )
     }
